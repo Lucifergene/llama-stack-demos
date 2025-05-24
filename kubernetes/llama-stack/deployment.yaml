@@ -35,14 +35,18 @@ spec:
               value: '128000'
             - name: VLLM_MAX_TOKENS
               value: '128000'
-            - name: LLAMA3B_URL
-              value: 'https://llama32-3b.llama-serve.svc.cluster.local/v1'
-            - name: LLAMA3B_MODEL
-              value: llama32-3b
-            - name: GRANITE_URL
-              value: 'https://granite32-8b.llama-serve.svc.cluster.local/v1'
-            - name: GRANITE_MODEL
-              value: granite32-8b
+            - name: TINYLLAMA1B_URL
+              value: 'https://vllm.vllm.svc.cluster.local/v1'
+            - name: TINYLLAMA1B_MODEL
+              value: "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+            # - name: LLAMA3B_URL
+            #   value: 'https://llama32-3b.llama-serve.svc.cluster.local/v1'
+            # - name: LLAMA3B_MODEL
+            #   value: llama32-3b
+            # - name: GRANITE_URL
+            #   value: 'https://granite32-8b.llama-serve.svc.cluster.local/v1'
+            # - name: GRANITE_MODEL
+            #   value: granite32-8b
             - name: VLLM_API_TOKEN
               value: fake
             - name: CUSTOM_TIKTOKEN_CACHE_DIR
